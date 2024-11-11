@@ -21,9 +21,15 @@ struct ContentView: View {
                 Text("Hello, world!")
                 
                 NavigationLink {
-                    SpacingView()
+                    SpacingDemoView()
                 } label: {
                     Label("Show Spacing Demo", systemImage: "space")
+                }
+
+                NavigationLink {
+                    RadiusDemoView()
+                } label: {
+                    Label("Show Radius Demo", systemImage: "circle")
                 }
             }
             .padding()

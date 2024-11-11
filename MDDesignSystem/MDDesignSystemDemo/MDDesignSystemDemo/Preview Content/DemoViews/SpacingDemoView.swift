@@ -1,7 +1,7 @@
 import SwiftUI
 import MDDesignSystem
 
-struct SpacingView: View {
+struct SpacingDemoView: View {
 
     var body: some View {
         VStack {
@@ -30,5 +30,5 @@ struct SpacingView: View {
 }
 
 #Preview {
-    SpacingView()
+    SpacingDemoView()
 }
