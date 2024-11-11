@@ -1,18 +1,18 @@
 import Foundation
 
-extension DesignSystem {
+// This code was inspired by the article:
+// https://atlassian.design/foundations/spacing
+public struct SpacingSystem {
 
-    // This code was inspired by the article:
-    // https://medium.com/eightshapes-llc/space-in-design-systems-188bcbae0d62
-    enum Spacing: CGFloat {
+    public let xs: CGFloat
+    public let small: CGFloat
+    public let medium: CGFloat
+    public let large: CGFloat
 
-        case xs = 4.0
-        case small = 8.0
-        case medium = 16.0
-        case large = 32.0
-
-        var value: CGFloat {
-            self.rawValue
-        }
+    public init(xs: CGFloat, small: CGFloat, medium: CGFloat, large: CGFloat) {
+        self.xs = xs
+        self.small = small
+        self.medium = medium
+        self.large = large
     }
 }

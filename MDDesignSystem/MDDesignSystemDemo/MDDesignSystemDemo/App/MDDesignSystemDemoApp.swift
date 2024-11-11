@@ -9,6 +9,11 @@ import SwiftUI
 
 @main
 struct MDDesignSystemDemoApp: App {
+
+    init() {
+        DesignSystemService().setup()
+    }
+
     var body: some Scene {
         WindowGroup {
             ContentView()
